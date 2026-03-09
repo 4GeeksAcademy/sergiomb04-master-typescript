@@ -23,7 +23,6 @@
 
 !/exercises
 !/exercises/*
-/exercises/**/app.js
 /node_modules
 /learnpack-typescript-plugin/node_modules
 
