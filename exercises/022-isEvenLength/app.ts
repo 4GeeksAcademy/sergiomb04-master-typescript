@@ -1,6 +1,7 @@
 function isEvenLength(word: string): boolean {
   // your code here
-  return false;
+  const length = word.length;
+  return length % 2 === 0;
 }
 
 export {};

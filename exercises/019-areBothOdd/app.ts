@@ -1,6 +1,8 @@
 function areBothOdd(a: number, b: number): boolean {
   // your code here
-  return false;
+  let aOdd = a % 2 !== 0;
+  let bOdd = b % 2 !== 0;
+  return aOdd && bOdd;
 }
 
 export {};

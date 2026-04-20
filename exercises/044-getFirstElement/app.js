@@ -1,3 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function getFirstElement(array) {
-  // your code here
+    // your code here
+    if (array.length == 0)
+        return undefined;
+    return Number(array[0]);
 }

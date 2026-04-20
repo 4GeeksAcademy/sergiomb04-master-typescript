@@ -1,6 +1,7 @@
-function getFirstElement(array: unknown[]): unknown[] {
+function getFirstElement(array: unknown[]): number | undefined {
   // your code here
-    return [];
+  if (array.length == 0) return undefined;
+  return Number(array[0]);
 }
 
 export {};

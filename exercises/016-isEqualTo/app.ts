@@ -1,6 +1,6 @@
 function isEqualTo(a: number, b: number): boolean {
   // your code here
-  return false;
+  return a === b;
 }
 
 export {};

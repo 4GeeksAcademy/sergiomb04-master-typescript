@@ -1,6 +1,7 @@
-function removeFromFront(arr: unknown[], arg2: unknown): string {
+function removeFromFront(arr: number[], arg2: unknown): number[] {
   // your code here
-  return '';
+  arr.shift();
+  return arr;
 }
 
 export {};
