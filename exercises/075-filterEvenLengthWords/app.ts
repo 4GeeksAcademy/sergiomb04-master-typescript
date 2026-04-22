@@ -1,6 +1,6 @@
-function filterEvenLengthWords(words: unknown[], arg2: string): number {
+function filterEvenLengthWords(words: string[], arg2: string): string[] {
   // your code here
-    return 0;
+  return words.filter(str => str.length % 2 == 0);
 }
 
 export {};

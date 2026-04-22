@@ -1,6 +1,10 @@
-function findSmallestElement(arr: unknown[], arg2: unknown): number {
-  // your code here
-  return 0;
+function findSmallestElement(arr: number[], arg2: unknown): number {
+  if (arr.length == 0) return 0;
+  let smallest = arr[0];
+  for (const num of arr) {
+    if (smallest > num ) smallest = num;
+  }
+  return smallest;
 }
 
 export {};

@@ -1,6 +1,7 @@
 function getAllElementsButNth(array: unknown[], n: number): unknown[] {
   // your code here
-  return [];
+  array.splice(n, 1);
+  return array;
 }
 
 export {};

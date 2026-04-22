@@ -1,6 +1,6 @@
 function addToBackOfNew(arr: unknown[], element: number): unknown[] {
   // your code here
-  return [];
+  return [...arr, element];
 }
 
 export {};

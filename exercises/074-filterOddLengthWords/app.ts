@@ -1,6 +1,6 @@
-function filterOddLengthWords(words: unknown[]): number {
+function filterOddLengthWords(words: string[]): string[] {
   // your code here
-    return 0;
+    return words.filter(str => str.length % 2 == 1);
 }
 
 export {};

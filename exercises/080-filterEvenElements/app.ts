@@ -1,6 +1,6 @@
-function filterEvenElements(arr: unknown[], arg2: unknown): unknown[] {
+function filterEvenElements(arr: number[], arg2: unknown): number[] {
   // your code here
-  return [];
+  return arr.filter(num => num % 2 == 0);
 }
 
 export {};

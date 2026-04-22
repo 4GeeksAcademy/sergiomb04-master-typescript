@@ -1,6 +1,10 @@
-function computeSumOfAllElements(arr: unknown[], arg2: unknown): number {
+function computeSumOfAllElements(arr: number[], arg2: unknown): number {
   // your code here
-  return 0;
+  let result = 0;
+  for (const num of arr) {
+    result += num;
+  }
+  return result;
 }
 
 export {};

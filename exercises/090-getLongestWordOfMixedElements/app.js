@@ -1,4 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function getLongestWordOfMixedElements(arr) {
-  // your code here
-  return '';
+    const strArray = arr.filter(value => typeof value === "string");
+    if (strArray.length == 0)
+        return '';
+    let longest = strArray[0];
+    for (const element of strArray) {
+        if (element.length > longest.length)
+            longest = element;
+    }
+    return longest;
+    return '';
 }

@@ -1,6 +1,6 @@
-function filterOddElements(arr: unknown[], arg2: unknown): unknown[] {
+function filterOddElements(arr: number[], arg2: unknown): number[] {
   // your code here
-  return [];
+  return arr.filter(num => num % 2 == 1);
 }
 
 export {};

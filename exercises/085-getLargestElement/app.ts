@@ -1,6 +1,11 @@
-function getLargestElement(arr: unknown[], arg2: unknown): number {
+function getLargestElement(arr: number[], arg2: unknown): number {
   // your code here
-  return 0;
+  if (arr.length == 0) return 0;
+  let largest = arr[0];
+  for (const num of arr) {
+    if (largest < num) largest = num;
+  }
+  return largest;
 }
 
 export {};
