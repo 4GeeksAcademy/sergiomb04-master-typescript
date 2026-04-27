@@ -1,6 +1,5 @@
-function isPersonOldEnoughToDrink(person: Record<string, unknown>): boolean {
-  // your code here
-  return false;
+function isPersonOldEnoughToDrink(person: any): boolean {
+  return person.age >= 21;
 }
 
 export {};

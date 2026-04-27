@@ -1,6 +1,6 @@
-function addObjectProperty(obj1: Record<string, unknown>, key: string, obj2: Record<string, unknown>): unknown[] {
-  // your code here
-    return [];
+function addObjectProperty(obj1: any, key: string, obj2: any): any {
+  obj1[key] = obj2;
+  return obj1;
 }
 
 export {};

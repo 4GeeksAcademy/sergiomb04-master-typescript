@@ -1,6 +1,8 @@
-function getAllButLastElementOfProperty(obj: Record<string, unknown>, key: unknown, arg3: string): unknown[] {
-  // your code here
-    return [];
+function getAllButLastElementOfProperty(obj: any, key: string): any[] {
+  if (Array.isArray(obj[key])) {
+    return obj[key].slice(0, -1);
+  }
+  return [];
 }
 
 export {};

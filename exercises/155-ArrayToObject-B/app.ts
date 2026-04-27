@@ -1,6 +1,9 @@
-function fromListToObject(array: unknown[], arg2: string, arg3: unknown[], arg4: string, arg5: unknown): string {
-  // your code here
-  return '';
+function fromListToObject(array: [string, any][]): Record<string, any> {
+  const result: Record<string, any> = {};
+  for (const [key, value] of array) {
+    result[key] = value;
+  }
+  return result;
 }
 
 export {};

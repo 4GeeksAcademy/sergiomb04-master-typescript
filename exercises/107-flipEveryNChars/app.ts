@@ -1,6 +1,10 @@
 function flipEveryNChars(input: string, n: number): string {
-  // your code here
-  return '';
+  let result = '';
+  for (let i = 0; i < input.length; i += n) {
+    const chunk = input.slice(i, i + n);
+    result += chunk.split('').reverse().join('');
+  }
+  return result;
 }
 
 export {};

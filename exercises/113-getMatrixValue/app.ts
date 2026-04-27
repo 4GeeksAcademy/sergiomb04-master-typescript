@@ -1,6 +1,8 @@
-function getMatrixValue(matrix: unknown[], row: unknown, col: unknown[], arg4: unknown, arg5: number, arg6: number): number {
-  // your code here
-  return 0;
+function getMatrixValue(matrix: number[][], row: number, col: number): number | undefined {
+  if (matrix[row] && matrix[row][col] !== undefined) {
+    return matrix[row][col];
+  }
+  return undefined;
 }
 
 export {};

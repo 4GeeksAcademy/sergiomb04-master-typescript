@@ -1,6 +1,13 @@
-function search(array: unknown[], value: unknown, arg3: number): number {
-  // your code here
-  return 0;
+function search(array: number[], value: number): number | null {
+  let start = 0;
+  let end = array.length - 1;
+  while (start <= end) {
+    const mid = Math.floor((start + end) / 2);
+    if (array[mid] === value) return mid;
+    if (array[mid] < value) start = mid + 1;
+    else end = mid - 1;
+  }
+  return null;
 }
 
 export {};

@@ -1,6 +1,5 @@
-function renameBookImmutable(book: unknown, newTitle: string): Record<string, unknown> {
-  // your code here
-  return {};
+function renameBookImmutable(book: any, newTitle: string): any {
+  return { ...book, title: newTitle };
 }
 
 export {};

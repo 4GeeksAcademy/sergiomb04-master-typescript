@@ -1,6 +1,8 @@
-function getLastElementOfProperty(obj: Record<string, unknown>, key: unknown, arg3: string): number {
-  // your code here
-  return 0;
+function getLastElementOfProperty(obj: any, key: string): any {
+  if (Array.isArray(obj[key])) {
+    return obj[key][obj[key].length - 1];
+  }
+  return undefined;
 }
 
 export {};

@@ -1,6 +1,6 @@
-function addFullNameProperty(obj: Record<string, unknown>): unknown[] {
-  // your code here
-    return [];
+function addFullNameProperty(obj: any): any {
+  obj.fullName = `${obj.firstName} ${obj.lastName}`;
+  return obj;
 }
 
 export {};

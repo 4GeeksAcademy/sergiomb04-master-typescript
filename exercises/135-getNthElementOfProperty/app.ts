@@ -1,6 +1,8 @@
-function getNthElementOfProperty(obj: unknown, key: string, n: number): number {
-  // your code here
-  return 0;
+function getNthElementOfProperty(obj: any, key: string, n: number): any {
+  if (Array.isArray(obj[key])) {
+    return obj[key][n];
+  }
+  return undefined;
 }
 
 export {};

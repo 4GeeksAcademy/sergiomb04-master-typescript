@@ -1,6 +1,15 @@
-function buildUserProfile(name: string, age: number): Record<string, unknown> {
-  // your code here
-  return {} as Record<string, unknown>;
+interface UserProfile {
+  name: string;
+  age: number;
+  isAdult: boolean;
+}
+
+function buildUserProfile(name: string, age: number): UserProfile {
+  return {
+    name,
+    age,
+    isAdult: age >= 18
+  };
 }
 
 export {};

@@ -1,6 +1,5 @@
-function countNumberOfKeys(obj: Record<string, unknown>): number {
-  // your code here
-  return 0;
+function countNumberOfKeys(obj: any): number {
+  return Object.keys(obj).length;
 }
 
 export {};

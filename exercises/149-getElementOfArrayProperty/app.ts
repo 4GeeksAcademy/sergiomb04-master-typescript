@@ -1,6 +1,8 @@
-function getElementOfArrayProperty(obj: Record<string, unknown>, key: string, index: number): string {
-  // your code here
-  return '';
+function getElementOfArrayProperty(obj: any, key: string, index: number): any {
+  if (Array.isArray(obj[key])) {
+    return obj[key][index];
+  }
+  return undefined;
 }
 
 export {};

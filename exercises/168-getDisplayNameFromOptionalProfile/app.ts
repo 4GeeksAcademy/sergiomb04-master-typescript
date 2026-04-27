@@ -1,6 +1,5 @@
-function getDisplayName(profile: Record<string, unknown>, arg2: unknown): string {
-  // your code here
-  return '';
+function getDisplayName(profile: any): string {
+  return profile.nickname || profile.firstName;
 }
 
 export {};

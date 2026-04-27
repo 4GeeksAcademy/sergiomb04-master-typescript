@@ -1,6 +1,5 @@
-function isPersonOldEnoughToDrive(person: Record<string, unknown>): boolean {
-  // your code here
-  return false;
+function isPersonOldEnoughToDrive(person: any): boolean {
+  return person.age >= 16;
 }
 
 export {};

@@ -1,6 +1,6 @@
-function comparePassByValueAndReference(input: unknown): Record<string, unknown> {
-  // your code here
-  return {};
+function comparePassByValueAndReference(input: any): any {
+  input.count += 1;
+  return { externalCount: input.count };
 }
 
 export {};

@@ -1,6 +1,13 @@
-function binarySearchSortedArray(values: unknown[], target: number, arg3: number, arg4: number, arg5: unknown, arg6: number): number {
-  // your code here
-  return 0;
+function binarySearchSortedArray(values: number[], target: number): number {
+  let low = 0;
+  let high = values.length - 1;
+  while (low <= high) {
+    const mid = Math.floor((low + high) / 2);
+    if (values[mid] === target) return mid;
+    if (values[mid] < target) low = mid + 1;
+    else high = mid - 1;
+  }
+  return -1;
 }
 
 export {};

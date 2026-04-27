@@ -1,6 +1,8 @@
-function getFirstElementOfProperty(obj: unknown, key: string): number {
-  // your code here
-  return 0;
+function getFirstElementOfProperty(obj: any, key: string): any {
+  if (Array.isArray(obj[key])) {
+    return obj[key][0];
+  }
+  return undefined;
 }
 
 export {};

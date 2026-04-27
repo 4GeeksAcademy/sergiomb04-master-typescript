@@ -1,6 +1,5 @@
 function flipPairs(input: string): string {
-  // your code here
-  return '';
+  return input.replace(/(.)(.)/g, '$2$1');
 }
 
 export {};

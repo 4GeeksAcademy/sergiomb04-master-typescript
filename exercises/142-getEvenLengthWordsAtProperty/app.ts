@@ -1,6 +1,8 @@
-function getEvenLengthWordsAtProperty(obj: Record<string, unknown>, key: string): unknown[] {
-  // your code here
-    return [];
+function getEvenLengthWordsAtProperty(obj: any, key: string): string[] {
+  if (Array.isArray(obj[key])) {
+    return obj[key].filter((e: any) => typeof e === 'string' && e.length % 2 === 0);
+  }
+  return [];
 }
 
 export {};

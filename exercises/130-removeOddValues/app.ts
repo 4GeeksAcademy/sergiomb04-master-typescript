@@ -1,6 +1,10 @@
-function removeOddValues(obj: unknown): unknown[] {
-  // your code here
-    return [];
+function removeOddValues(obj: any): any {
+  for (const key in obj) {
+    if (typeof obj[key] === 'number' && obj[key] % 2 !== 0) {
+      delete obj[key];
+    }
+  }
+  return obj;
 }
 
 export {};

@@ -1,6 +1,5 @@
-function isPersonOldEnoughToVote(arg1: Record<string, unknown>): boolean {
-  // your code here
-  return false;
+function isPersonOldEnoughToVote(person: any): boolean {
+  return person.age >= 18;
 }
 
 export {};

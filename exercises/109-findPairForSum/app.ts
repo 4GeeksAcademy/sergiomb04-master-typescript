@@ -1,5 +1,11 @@
-function findPairForSum(array: unknown[], number: number, arg3: unknown, arg4: number): unknown[] {
-  // your code here
+function findPairForSum(array: number[], number: number): number[] {
+  for (let i = 0; i < array.length; i++) {
+    for (let j = i + 1; j < array.length; j++) {
+      if (array[i] + array[j] === number) {
+        return [array[i], array[j]];
+      }
+    }
+  }
   return [];
 }
 

@@ -1,6 +1,10 @@
-function removeNumbersLessThan(num: number, obj: unknown): unknown[] {
-  // your code here
-    return [];
+function removeNumbersLessThan(num: number, obj: any): any {
+  for (const key in obj) {
+    if (typeof obj[key] === 'number' && obj[key] < num) {
+      delete obj[key];
+    }
+  }
+  return obj;
 }
 
 export {};

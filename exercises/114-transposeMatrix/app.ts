@@ -1,6 +1,16 @@
-function transposeMatrix(matrix: unknown[], arg2: number, arg3: unknown, arg4: unknown[], arg5: number, arg6: unknown): unknown[] {
-  // your code here
-  return [];
+function transposeMatrix(matrix: number[][]): number[][] {
+  if (matrix.length === 0) return [];
+  const rows = matrix.length;
+  const cols = matrix[0].length;
+  const result: number[][] = [];
+
+  for (let j = 0; j < cols; j++) {
+    result[j] = [];
+    for (let i = 0; i < rows; i++) {
+      result[j][i] = matrix[i][j];
+    }
+  }
+  return result;
 }
 
 export {};

@@ -1,5 +1,5 @@
-function removeProperty(obj: unknown, key: string): void {
-  // your code here
-  }
+function removeProperty(obj: any, key: string): void {
+  delete obj[key];
+}
 
 export {};

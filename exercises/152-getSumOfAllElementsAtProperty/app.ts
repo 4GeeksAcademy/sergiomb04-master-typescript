@@ -1,5 +1,7 @@
-function getSumOfAllElementsAtProperty(obj: Record<string, unknown>, key: unknown, arg3: string): number {
-  // your code here
+function getSumOfAllElementsAtProperty(obj: any, key: string): number {
+  if (Array.isArray(obj[key])) {
+    return obj[key].reduce((acc: number, val: number) => acc + val, 0);
+  }
   return 0;
 }
 

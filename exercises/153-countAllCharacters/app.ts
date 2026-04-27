@@ -1,6 +1,9 @@
-function countAllCharacters(str: string): Record<string, unknown> {
-  // your code here
-  return {} as Record<string, unknown>;
+function countAllCharacters(str: string): Record<string, number> {
+  const result: Record<string, number> = {};
+  for (const char of str) {
+    result[char] = (result[char] || 0) + 1;
+  }
+  return result;
 }
 
 export {};

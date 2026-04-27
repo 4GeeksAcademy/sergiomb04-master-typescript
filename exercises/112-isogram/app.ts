@@ -1,6 +1,6 @@
 function isIsogram(text: string): boolean {
-  // your code here
-  return false;
+  const lowerCaseText = text.toLowerCase();
+  return new Set(lowerCaseText).size === lowerCaseText.length;
 }
 
 export {};

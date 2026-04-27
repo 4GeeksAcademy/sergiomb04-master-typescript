@@ -1,6 +1,8 @@
-function getSmallestElementAtProperty(obj: Record<string, unknown>, key: number, arg3: unknown, arg4: string): number {
-  // your code here
-  return 0;
+function getSmallestElementAtProperty(obj: any, key: string): any {
+  if (Array.isArray(obj[key]) && obj[key].length > 0) {
+    return Math.min(...obj[key]);
+  }
+  return [];
 }
 
 export {};

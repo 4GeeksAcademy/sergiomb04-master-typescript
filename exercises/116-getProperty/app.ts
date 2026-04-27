@@ -1,6 +1,5 @@
-function getProperty(obj: unknown, key: string): unknown[] {
-  // your code here
-    return [];
+function getProperty(obj: any, key: string): any {
+  return obj[key];
 }
 
 export {};
