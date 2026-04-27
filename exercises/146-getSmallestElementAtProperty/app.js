@@ -1,4 +1,8 @@
-function getSmallestElementAtProperty(obj, key, arg3, arg4) {
-  // your code here
-  return 0;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+function getSmallestElementAtProperty(obj, key) {
+    if (Array.isArray(obj[key]) && obj[key].length > 0) {
+        return Math.min(...obj[key]);
+    }
+    return [];
 }

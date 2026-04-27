@@ -1,4 +1,5 @@
-function getDisplayName(profile, arg2) {
-  // your code here
-  return '';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+function getDisplayName(profile) {
+    return profile.nickname || profile.firstName;
 }

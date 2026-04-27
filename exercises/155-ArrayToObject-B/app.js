@@ -1,4 +1,9 @@
-function fromListToObject(array, arg2, arg3, arg4, arg5) {
-  // your code here
-  return '';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+function fromListToObject(array) {
+    const result = {};
+    for (const [key, value] of array) {
+        result[key] = value;
+    }
+    return result;
 }

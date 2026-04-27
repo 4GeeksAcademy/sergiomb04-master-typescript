@@ -1,4 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function detectOutlierValue(string) {
-  // your code here
-  return 0;
+    const numbers = string.split(' ').map(Number);
+    const evens = numbers.filter((n) => n % 2 === 0);
+    const odds = numbers.filter((n) => n % 2 !== 0);
+    if (evens.length === 1) {
+        return numbers.indexOf(evens[0]) + 1;
+    }
+    else {
+        return numbers.indexOf(odds[0]) + 1;
+    }
 }

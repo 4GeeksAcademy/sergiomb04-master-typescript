@@ -1,4 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function getElementOfArrayProperty(obj, key, index) {
-  // your code here
-  return '';
+    if (Array.isArray(obj[key])) {
+        return obj[key][index];
+    }
+    return undefined;
 }

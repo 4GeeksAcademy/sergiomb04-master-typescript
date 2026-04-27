@@ -1,4 +1,16 @@
-function transposeMatrix(matrix, arg2, arg3, arg4, arg5, arg6) {
-  // your code here
-  return [];
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+function transposeMatrix(matrix) {
+    if (matrix.length === 0)
+        return [];
+    const rows = matrix.length;
+    const cols = matrix[0].length;
+    const result = [];
+    for (let j = 0; j < cols; j++) {
+        result[j] = [];
+        for (let i = 0; i < rows; i++) {
+            result[j][i] = matrix[i][j];
+        }
+    }
+    return result;
 }
